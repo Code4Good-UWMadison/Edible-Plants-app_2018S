@@ -28,8 +28,8 @@ public class LocationPageActivity extends AppCompatActivity {
             }
         });
     }
-    /*TODO: 1. Create page linking each location with a picture or simply a link
-      TODO: 2. On each page list the Address, Picture(s), Food Available, and Events
+    /*TODO: 1. Create page linking each location with a picture or simply a link.
+      TODO: 2. On each page list the Address, Picture(s), Food Available, and Events.
     */
 
 }
