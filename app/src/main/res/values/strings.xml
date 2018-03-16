@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EdibleLandscapes</string>
+    <string name="resources">Resources</string>
+    <string name="sources">Associated Students of Madison</string>
 </resources>

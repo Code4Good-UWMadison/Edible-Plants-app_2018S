@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Edible-Plants-app_2018S.iml" filepath="$PROJECT_DIR$/.idea/Edible-Plants-app_2018S.iml" />
       <module fileurl="file://$PROJECT_DIR$/Edible-Plants-app_2018S.iml" filepath="$PROJECT_DIR$/Edible-Plants-app_2018S.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
