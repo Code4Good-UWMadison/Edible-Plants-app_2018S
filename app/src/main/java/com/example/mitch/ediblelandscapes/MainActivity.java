@@ -17,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button button=(Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this,Contacts.class));
+            }
 
+        });
     }
 }

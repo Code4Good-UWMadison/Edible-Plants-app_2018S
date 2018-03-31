@@ -1,228 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.mitch.ediblelandscapes.Contacts"
-    tools:layout_editor_absoluteY="81dp"
-    tools:showIn="@layout/activity_contacts">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/heading"
-        android:layout_width="163dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif"
-        android:text="Contacts"
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/Contacts"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="8dp"
-        tools:ignore="MissingConstraints" />
+        android:visibility="visible" />
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mitch.ediblelandscapes.Contacts"
+    android:orientation="vertical">
+
 
     <TextView
-        android:id="@+id/mdcfrgHeading"
-        android:layout_width="376dp"
-        android:layout_height="28dp"
-        android:text="Madison &amp; Dane County Food Resource Guide"
-        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
         android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="74dp"
-        tools:ignore="MissingConstraints" />
+        android:paddingTop="25dp"
+        android:paddingLeft="10dp"
+        />
 
     <TextView
-        android:id="@+id/mdcfrgAddress"
-        android:layout_width="387dp"
-        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGAddress"
+        android:textSize="18sp"
+        android:visibility="visible"
         android:autoLink="map"
-        android:text="2300 South Park Street\nMadison,WI 53713"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="102dp"
-        tools:ignore="MissingConstraints" />
+        android:paddingLeft="10dp"/>
 
     <TextView
-        android:id="@+id/mdcfrgPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autoLink="phone"
-        android:text="Phone (608) 267-1111"
+        android:text="@string/MDCFRGPhone"
         android:textSize="18sp"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="147dp"
-        tools:ignore="MissingConstraints" />
+        android:autoLink="phone"
+        android:paddingLeft="10dp"
+        />
 
     <TextView
-        android:id="@+id/mdcfrgTTY"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autoLink="phone"
-        android:text="TTY/Textnet (866) 704-2312"
+        android:text="@string/MDCFRGTTY"
         android:textSize="18sp"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="171dp"
-        tools:ignore="MissingConstraints" />
+        android:autoLink="phone"
+        android:paddingLeft="10dp"
+        />
 
     <TextView
-        android:id="@+id/mdcfrgSite"
-        android:layout_width="222dp"
-        android:layout_height="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGSite"
+        android:textSize="18sp"
+        android:visibility="visible"
         android:autoLink="web"
-        android:text="www.publichealthmdc.com"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="195dp"
-        tools:ignore="MissingConstraints" />
+        android:paddingLeft="10dp"/>
 
     <TextView
-        android:id="@+id/sfpDescription"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Free breakfast and lunch at various locations throughout Dane County for children under the age of 18 years during the months of June and July."
-        android:textSize="18sp"
+        android:text="@string/SFPHeading"
+        android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="284dp"
-        tools:ignore="MissingConstraints" />
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
 
     <TextView
-        android:id="@+id/sfsNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/SFPDesc"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:visibility="visible"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFPPhone"
+        android:textSize="18sp"
+        android:visibility="visible"
         android:autoLink="phone"
-        android:text="608-204-4001"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="458dp"
-        tools:ignore="MissingConstraints" />
+        android:paddingLeft="10dp"
+        />
 
     <TextView
-        android:id="@+id/sfpNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/SFSHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFSDesc"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:visibility="visible"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFSPhone"
+        android:textSize="18sp"
+        android:visibility="visible"
         android:autoLink="phone"
-        android:text="608-204-4007"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="352dp"
-        tools:ignore="MissingConstraints" />
+        android:paddingLeft="10dp"
+        />
 
     <TextView
-        android:id="@+id/sfsHeading"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="School Food Service/ Madison"
-        android:textSize="18sp"
+        android:text="@string/ASMHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
         android:textStyle="bold"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="393dp"
-        tools:ignore="MissingConstraints" />
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
 
     <TextView
-        android:id="@+id/sfsDescription"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Free and reduced priced breakfast and lunch. Contact your child's school for an application and information."
+        android:text="@string/ASMAddress"
         android:textSize="18sp"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="412dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/sfpHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lineSpacingExtra="18sp"
-        android:text="Summer Food Program/ Madison"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="256dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/generalHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="For more information, email us at:"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="603dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/generalEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:autoLink="email"
-        android:text="ediblelandscapesuw@gmail.com"
-        android:textSize="18sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="627dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/asmHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Associated Students of Madison (ASM)"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="508dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/asmAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:autoLink="map"
-        android:text="333 East Campus Mall, 4th Floor\nMadison, WI 53715"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GenHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GenEmail"
         android:textSize="18sp"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="532dp"
-        tools:ignore="MissingConstraints" />
+        android:autoLink="email"
+        android:paddingLeft="10dp"
+        android:paddingBottom="25dp"/>
+
 
     <Button
-        android:id="@+id/returnHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="661dp"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/homeButton"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/home"
+        android:textAlignment="center" />
 
-</android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+    </LinearLayout>

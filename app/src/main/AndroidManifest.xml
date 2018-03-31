@@ -17,14 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Annoucement" />
-        <activity
-            android:name=".Contacts"
-            android:label="@string/title_activity_contacts"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Contacts"></activity>
     </application>
 
 </manifest>

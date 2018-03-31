@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">EdibleLandscapes</string>
     <string name="resources">Resources</string>
-    <string name="sources">Associated Students of Madison</string>
-    <string name="title_activity_contacts">Contacts</string>
+
+    <string name="Contacts">Contacts</string>
+    <string name="MDCFRGHeading">Madison &amp; Dane County Food Resource</string>
+    <string name="MDCFRGAddress">2300 South Park Street\nMadison, WI 53713</string>
+    <string name="MDCFRGPhone">Phone (608)267-1111</string>
+    <string name="MDCFRGTTY">TTY/Textnet (866)704-2312</string>
+    <string name="MDCFRGSite">www.publichealthmdc.com</string>
+    <string name="SFPHeading">Summer Food Program/ Madison</string>
+    <string name="SFPDesc">Free breakfast and lunch at various locations throughout Dane County for children under the age of 18 years during the months of June and July.</string>
+    <string name="SFPPhone">Phone (608)204-4007</string>
+    <string name="SFSHeading">School Food Service/ Madison</string>
+    <string name="SFSDesc">Free and reduced priced breakfast and lunch.  Contact your child’s school for an applicationand information.</string>
+    <string name="SFSPhone">Phone (608)204-4001</string>
+    <string name="GenHeading">For more information, contact us at:</string>
+    <string name="GenEmail">ediblelandscapesuw@gmail.com</string>
+    <string name="ASMHeading">Associated Students of Madison (ASM)</string>
+    <string name="ASMAddress">333 east campus mall, 4th floor\nMadison, WI 53715</string>
+    <string name="Home">Home</string>
+
 </resources>
