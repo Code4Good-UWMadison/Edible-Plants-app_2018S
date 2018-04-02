@@ -193,9 +193,10 @@
         android:layout_width="65dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:background="@drawable/home"
+        android:text="Home"
         android:textAlignment="center" />
-
+    <!--android:background="@drawable/home"-->
+    please push @drawable/home to github as well for everyone to use it
 
 
 
