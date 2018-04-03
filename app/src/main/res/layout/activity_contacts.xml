@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mitch.ediblelandscapes.Contacts"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/Contacts"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mitch.ediblelandscapes.Contacts"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="25dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGAddress"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="map"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGPhone"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="phone"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGTTY"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="phone"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MDCFRGSite"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="web"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFPHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFPDesc"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:visibility="visible"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFPPhone"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="phone"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFSHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFSDesc"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:visibility="visible"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SFSPhone"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="phone"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ASMHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ASMAddress"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="map"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GenHeading"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GenEmail"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:autoLink="email"
+        android:paddingLeft="10dp"
+        android:paddingBottom="25dp"/>
+
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Home"
+        android:textAlignment="center" />
+    <!--android:background="@drawable/home"-->
+    please push @drawable/home to github as well for everyone to use it
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+    </LinearLayout>

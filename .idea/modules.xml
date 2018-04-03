@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Edible-Plants-app_2018S.iml" filepath="$PROJECT_DIR$/Edible-Plants-app_2018S.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\PC\Documents\GitHub\Edible Plants\Edible-Plants-app_2018S\app\app.iml" filepath="C:\Users\PC\Documents\GitHub\Edible Plants\Edible-Plants-app_2018S\app\app.iml" />
     </modules>
   </component>
 </project>
