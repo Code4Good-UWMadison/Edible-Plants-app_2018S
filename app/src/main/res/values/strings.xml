@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">EdibleLandscapes</string>
     <string name="resources">Resources</string>
-    <string name="sources">Associated Students of Madison</string>
+    <string name="asm_name">Associated Students of Madison</string>
+    <string name="asm_info">ASM recently set in motion a food pantry for students of UW-Madison.
+        The food pantry is located on 333 East Campus Mall, on the 4th floor of Student Activity
+        Center. ASM accepts donations as well.</string>
+    <string name="fhking">F.H. King</string>
+    <string name="fhking_info">F.H. King student organization has a 2-acre farm and a roof-top garden
+        which produces more than 5000 pounds of vegetables every growing season.These vegetables
+        are handed out to students from May to October every Friday at 1pm at East Campus Mall.</string>
+    <string name= "growing_power">Growing Power</string>
+    <string name="grow_info">Growing Power Madison is actively participating in providing food
+        security and accessibility for the community members of South Madison. Additionally, this is
+        a great educational resource for those interested in urban gardening. </string>
+    <string name="farmers_market">Local Farmer\'s Market</string>
+    <string name="farmer_info">Check out any of Madison\'s</string>
+    <string name="eagle_heights">Eagle Heights Community Gardens</string>
 </resources>
