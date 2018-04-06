@@ -14,6 +14,7 @@ public class Annoucement extends AppCompatActivity {
         setContentView(R.layout.activity_annoucement);
     }
 
+    // back to homepage
     Intent home = new Intent(Annoucement.this, MainActivity.class);
     public void backToHomepage(){
         startActivity(home);

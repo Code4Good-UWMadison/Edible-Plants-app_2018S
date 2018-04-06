@@ -5,20 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mitch.ediblelandscapes.Announcement"
+    tools:context="com.example.mitch.ediblelandscapes.Annoucement"
     android:orientation="vertical">
 
-    <TextView
+    <ListView
+        android:id="@+id/newsListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Announcement 1"
-        android:textSize="30dp"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="some random announcement to test"
-        />
+
+    </ListView>
 
     <Button
         android:layout_width="match_parent"
