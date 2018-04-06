@@ -12,10 +12,9 @@ public class AnnounceItem {
     private String date;
     private int imageID;
 
-    public AnnounceItem(String announcementTitle, String announcementDesc, String announcementDescSmall, String time, String date, int imageID) {
+    public AnnounceItem(String announcementTitle, String announcementDesc, String time, String date, int imageID) {
         this.announcementTitle = announcementTitle;
         this.announcementDesc = announcementDesc;
-        this.announcementDescSmall = announcementDescSmall;
         this.time = time;
         this.date = date;
         this.imageID = imageID;
@@ -29,9 +28,6 @@ public class AnnounceItem {
         return announcementDesc;
     }
 
-    public String getAnnouncementDescSmall() {
-        return announcementDescSmall;
-    }
 
     public String getTime() {
         return time;
