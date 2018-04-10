@@ -19,5 +19,6 @@
     <string name="ASMHeading">Associated Students of Madison (ASM)</string>
     <string name="ASMAddress">333 east campus mall, 4th floor\nMadison, WI 53715</string>
     <string name="Home">Home</string>
+    <string name="search_hint">Enter a food or place</string>
 
 </resources>
