@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "761423648032",
+    "firebase_url": "https://edible-landscapes.firebaseio.com",
+    "project_id": "edible-landscapes",
+    "storage_bucket": "edible-landscapes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761423648032:android:9dc1e00b3c4ce66d",
+        "android_client_info": {
+          "package_name": "com.example.mitch.ediblelandscapes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761423648032-ugbdi19vd30ngh4r3i9li4arj3g8qdeu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mitch.ediblelandscapes",
+            "certificate_hash": "8e396aaf8f33fa341b343d00cb1de1850cdcbb34"
+          }
+        },
+        {
+          "client_id": "761423648032-2pn29rf3p31v7vlt4ulu6hdel96f97r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc4Y2e0oHb458bHAf5u6cg250WyMliS2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761423648032-2pn29rf3p31v7vlt4ulu6hdel96f97r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
