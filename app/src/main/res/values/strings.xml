@@ -9,7 +9,7 @@
     <string name="fhking_info">F.H. King student organization has a 2-acre farm and a roof-top garden
         which produces more than 5000 pounds of vegetables every growing season.These vegetables
         are handed out to students from May to October every Friday at 1pm at East Campus Mall.</string>
-    <string name= "growing_power">Growing Power</string>
+    <string name="growing_power">Growing Power</string>
     <string name="grow_info">Growing Power Madison is actively participating in providing food
         security and accessibility for the community members of South Madison. Additionally, this is
         a great educational resource for those interested in urban gardening. </string>
@@ -34,9 +34,8 @@
     <string name="ASMHeading">Associated Students of Madison (ASM)</string>
     <string name="ASMAddress">333 east campus mall, 4th floor\nMadison, WI 53715</string>
     <string name="Home">Home</string>
-<<<<<<< HEAD
     <string name="search_hint">Enter a food or place</string>
 
-=======
->>>>>>> bc033f248c0665437c13f70f7498faf0a5cc43f3
+    =======
+    >>>>>>> bc033f248c0665437c13f70f7498faf0a5cc43f3
 </resources>
