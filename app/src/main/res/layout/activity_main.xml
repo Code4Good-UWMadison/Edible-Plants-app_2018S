@@ -4,11 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:maxHeight="550dp"
+    android:maxWidth="500dp"
+    android:minHeight="0dp"
+    android:minWidth="0dp"
     tools:context="com.example.mitch.ediblelandscapes.MainActivity">
 
 
     <SearchView
-        android:id="@+id/searchView"
         android:layout_width="367dp"
         android:layout_height="41dp"
         android:layout_marginEnd="8dp"
@@ -25,9 +28,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:text="Contacts"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -36,23 +39,21 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
         android:text="Resources"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/announcements"
-        app:layout_constraintStart_toEndOf="@+id/contacts" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/announcements"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="8dp"
         android:text="Announcements"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contacts" />
+
 
 </android.support.constraint.ConstraintLayout>

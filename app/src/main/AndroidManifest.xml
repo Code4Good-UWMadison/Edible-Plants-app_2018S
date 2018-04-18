@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Annoucement" />
-
+        <activity android:name=".resources" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
