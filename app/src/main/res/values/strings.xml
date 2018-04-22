@@ -9,13 +9,19 @@
     <string name="fhking_info">F.H. King student organization has a 2-acre farm and a roof-top garden
         which produces more than 5000 pounds of vegetables every growing season.These vegetables
         are handed out to students from May to October every Friday at 1pm at East Campus Mall.</string>
-    <string name= "growing_power">Growing Power</string>
+    <string name="growing_power">Growing Power</string>
     <string name="grow_info">Growing Power Madison is actively participating in providing food
         security and accessibility for the community members of South Madison. Additionally, this is
         a great educational resource for those interested in urban gardening. </string>
     <string name="farmers_market">Local Farmer\'s Market</string>
-    <string name="farmer_info">Check out any of Madison\'s</string>
-    <string name="eagle_heights">Eagle Heights Community Gardens</string>
+    <string name="farmer_info">Check out any of Madison\'s local farmer\'s markets: Dane County
+    Farmer\'s Market, Monroe Street Farmer's Market, and Eastside Farmer's Market.</string>
+    <string name= "eagle_heights">Eagle Heights Community Gardens</string>
+    <string name= "eagle_info">Almost a mile west of the campus, bounded by the Lakeshore Nature
+    Preserve, is a beautiful valley of community gardens. Members of the Madison community,
+    along with UW horticulture researchers and F.H. King student organization have their own
+    share of land on which they garden and enjoy the fruit of their labor. </string>
+
 
     <string name="Contacts">Contacts</string>
     <string name="MDCFRGHeading">Madison &amp; Dane County Food Resource</string>
@@ -27,16 +33,15 @@
     <string name="SFPDesc">Free breakfast and lunch at various locations throughout Dane County for children under the age of 18 years during the months of June and July.</string>
     <string name="SFPPhone">Phone (608)204-4007</string>
     <string name="SFSHeading">School Food Service/ Madison</string>
-    <string name="SFSDesc">Free and reduced priced breakfast and lunch.  Contact your child’s school for an applicationand information.</string>
+    <string name="SFSDesc">Free and reduced priced breakfast and lunch.  Contact your child’s school for an application and information.</string>
     <string name="SFSPhone">Phone (608)204-4001</string>
     <string name="GenHeading">For more information, contact us at:</string>
     <string name="GenEmail">ediblelandscapesuw@gmail.com</string>
     <string name="ASMHeading">Associated Students of Madison (ASM)</string>
     <string name="ASMAddress">333 east campus mall, 4th floor\nMadison, WI 53715</string>
     <string name="Home">Home</string>
-<<<<<<< HEAD
     <string name="search_hint">Enter a food or place</string>
 
-=======
->>>>>>> bc033f248c0665437c13f70f7498faf0a5cc43f3
+    =======
+    >>>>>>> bc033f248c0665437c13f70f7498faf0a5cc43f3
 </resources>
