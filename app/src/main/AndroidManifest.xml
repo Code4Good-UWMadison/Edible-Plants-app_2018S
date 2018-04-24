@@ -24,6 +24,10 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".Contacts" />
+        <activity android:name=".LocationList" />
+        <activity android:name=".ColeHallLocation" />
+        <activity android:name=".SelleryHallLocation" />
+        <activity android:name=".SmithHallLocation" />
     </application>
 
 </manifest>

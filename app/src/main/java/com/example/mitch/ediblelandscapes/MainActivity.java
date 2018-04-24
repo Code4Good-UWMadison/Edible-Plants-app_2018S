@@ -53,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        Button locations=(Button)findViewById(R.id.locations);
+        locations.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,LocationList.class));
+            }
+        });
 
         final TextView textViewDisplay = (TextView) findViewById(R.id.textView3);
         final TextView textViewDisplay2 = (TextView) findViewById(R.id.textView4);

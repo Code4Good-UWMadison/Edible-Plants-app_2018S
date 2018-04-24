@@ -41,7 +41,8 @@
     <string name="ASMAddress">333 east campus mall, 4th floor\nMadison, WI 53715</string>
     <string name="Home">Home</string>
     <string name="search_hint">Enter a food or place</string>
+    <string name="cole_location_button">coleLocationButton</string>
+    <string name="sellery_location_button">selleryLocationButton</string>
+    <string name="smith_location_button">smithLocationButton</string>
 
-    =======
-    >>>>>>> bc033f248c0665437c13f70f7498faf0a5cc43f3
 </resources>
