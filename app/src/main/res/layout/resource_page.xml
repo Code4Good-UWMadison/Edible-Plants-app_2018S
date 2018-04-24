@@ -1,116 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:maxHeight="600dp"
-    android:maxWidth="500dp"
-    android:minHeight="0dp"
-    android:minWidth="0dp"
-    android:scrollbars="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.mitch.ediblelandscapes.resources">
 
     <TextView
-        android:id="@+id/res_title"
-        android:layout_width="213dp"
-        android:layout_height="46dp"
+        android:id="@+id/resources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:text="@string/resources"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
 
-    <TextView
-        android:id="@+id/asm_title"
-        android:layout_width="308dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="84dp"
-        android:text="@string/asm_name"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/asm"
-        android:layout_width="248dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/asm_info"
-        android:textAlignment="gravity"
-        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
-        android:textColor="@android:color/background_dark"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="700dp"
+            android:maxWidth="500dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:scrollbars="vertical">
 
-    <TextView
-        android:id="@+id/fhking_info"
-        android:layout_width="251dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/fhking_info"
-        android:textAlignment="gravity"
-        android:textColor="@android:color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/asm_title"
+                android:layout_width="308dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/asm_name"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/asm_image"
-        android:layout_width="85dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="104dp"
-        android:background="@drawable/asm_uw"
-        android:contentDescription="@string/asm_name"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/asm_uw" />
+            <TextView
+                android:id="@+id/asm"
+                android:layout_width="248dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/asm_info"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                android:textColor="@android:color/background_dark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/fhking_image"
-        android:layout_width="85dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="212dp"
-        android:background="@drawable/fhking_uw"
-        android:contentDescription="@string/fhking"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fhking_uw" />
+            <TextView
+                android:id="@+id/fhking_info"
+                android:layout_width="251dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="208dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/fhking_info"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toEndOf="@+id/fhking_image"
+                app:layout_constraintTop_toBottomOf="@+id/asm"
+                app:layout_constraintVertical_bias="0.04" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="308dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/fhking"
-        android:text="@string/fhking"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toTopOf="@+id/fhking_info"
-        app:layout_constraintEnd_toEndOf="@+id/fhking_info"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/asm_image"
-        app:layout_constraintVertical_bias="0.0" />
-</android.support.constraint.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/asm_image"
+                android:layout_width="85dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/asm_uw"
+                android:contentDescription="@string/asm_name"
+                android:onClick="asmButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/asm"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/asm_uw" />
+
+            <ImageButton
+                android:id="@+id/fhking_image"
+                android:layout_width="85dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/fhking_uw"
+                android:backgroundTint="@android:color/background_light"
+                android:contentDescription="@string/fhking"
+                android:onClick="fhkButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:srcCompat="@drawable/fhking_uw" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="308dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/fhking"
+                android:text="@string/fhking"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/fhking_info"
+                app:layout_constraintEnd_toEndOf="@+id/fhking_info"
+                app:layout_constraintHorizontal_bias="0.181"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/asm_image"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/grow_pwr"
+                android:layout_width="268dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/growing_power"
+                android:text="@string/growing_power"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/grw_pwr_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fhking_image"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/grw_pwr_info"
+                android:layout_width="235dp"
+                android:layout_height="98dp"
+                android:layout_marginTop="44dp"
+                android:text="@string/grow_info"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fhking_image" />
+
+            <ImageButton
+                android:id="@+id/grw_pwr_image"
+                android:layout_width="85dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/growingpow_uw"
+                android:contentDescription="@string/growing_power"
+                android:onClick="grwButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/grw_pwr_info"
+                app:layout_constraintTop_toBottomOf="@+id/grow_pwr"
+                app:srcCompat="@drawable/growingpow_uw" />
+
+            <TextView
+                android:id="@+id/eagle_hts"
+                android:layout_width="298dp"
+                android:layout_height="39dp"
+                android:text="@string/eagle_heights"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.093"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grw_pwr_image" />
+
+            <TextView
+                android:id="@+id/egl_hts_info"
+                android:layout_width="259dp"
+                android:layout_height="123dp"
+                android:text="@string/eagle_info"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/egl_hts_image"
+                app:layout_constraintTop_toBottomOf="@+id/eagle_hts" />
+
+            <ImageButton
+                android:id="@+id/egl_hts_image"
+                android:layout_width="85dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/background_light"
+                android:contentDescription="@string/eagle_heights"
+                android:onClick="eagleButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eagle_hts"
+                app:srcCompat="@drawable/eagleheights_garden" />
+
+            <TextView
+                android:id="@+id/frms_mkt"
+                android:layout_width="182dp"
+                android:layout_height="21dp"
+                android:contentDescription="@string/farmers_market"
+                android:text="@string/farmers_market"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/egl_hts_info" />
+
+            <TextView
+                android:id="@+id/frms_mkt_info"
+                android:layout_width="338dp"
+                android:layout_height="47dp"
+                android:contentDescription="@string/farmer_info"
+                android:text="@string/farmer_info"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.347"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frms_mkt" />
+
+            <ImageButton
+                android:id="@+id/dane_cnt"
+                android:layout_width="85dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/daneco_fm"
+                android:contentDescription="@string/farmers_market"
+                android:onClick="daneButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frms_mkt_info"
+                app:srcCompat="@drawable/daneco_fm" />
+
+            <ImageButton
+                android:id="@+id/monroe_st"
+                android:layout_width="85dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="48dp"
+                android:background="@drawable/monroest_fm"
+                android:backgroundTint="@android:color/background_light"
+                android:contentDescription="@string/farmers_market"
+                android:onClick="monroeButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toEndOf="@+id/dane_cnt"
+                app:layout_constraintTop_toTopOf="@+id/dane_cnt"
+                app:srcCompat="@drawable/monroest_fm" />
+
+            <ImageButton
+                android:id="@+id/eastsd_mkt"
+                android:layout_width="91dp"
+                android:layout_height="81dp"
+                android:background="@drawable/eastside_fm"
+                android:contentDescription="@string/farmers_market"
+                android:onClick="eastsideButtonClick"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/monroe_st"
+                app:layout_constraintTop_toTopOf="@+id/monroe_st"
+                app:srcCompat="@drawable/eastside_fm" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

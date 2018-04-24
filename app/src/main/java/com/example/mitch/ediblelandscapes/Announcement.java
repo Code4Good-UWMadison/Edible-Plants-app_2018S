@@ -2,7 +2,6 @@ package com.example.mitch.ediblelandscapes;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.content.Intent;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Annoucement extends AppCompatActivity {
+public class Announcement extends AppCompatActivity {
 
     private List<AnnounceItem> newsFeed = new ArrayList<AnnounceItem>();
 
@@ -33,14 +32,14 @@ public class Annoucement extends AppCompatActivity {
     }
 
     // back to homepage
-    Intent home = new Intent(Annoucement.this, MainActivity.class);
-    public void backToHomepage(){
-        startActivity(home);
-    }
+    //Intent home = new Intent(Announcement.this, MainActivity.class);
+    //public void backToHomepage(){
+    //    startActivity(home);
+    //}
 
     private class customAdapter extends ArrayAdapter<AnnounceItem> {
         public customAdapter() {
-            super(Annoucement.this, R.layout.news, newsFeed);
+            super(Announcement.this, R.layout.news, newsFeed);
         }
 
         @Override

@@ -17,13 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Annoucement" />
-
+        <activity android:name=".Announcement" />
+        <activity android:name=".resources" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".Contacts" />
+        <activity android:name=".LocationList" />
+        <activity android:name=".ColeHallLocation" />
+        <activity android:name=".SelleryHallLocation" />
+        <activity android:name=".SmithHallLocation" />
     </application>
 
 </manifest>
