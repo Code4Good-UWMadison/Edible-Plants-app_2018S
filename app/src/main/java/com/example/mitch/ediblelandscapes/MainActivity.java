@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        SearchView search = (SearchView)findViewById(R.id.searchView);
-        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+       /*SearchView search = (SearchView)findViewById(R.id.searchView);
+        //search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             public boolean onQueryTextChange(String newText){return true;}
 
             public boolean onQueryTextSubmit(String query){
@@ -88,6 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
             }
-        });
+        });*/
     }
 }
