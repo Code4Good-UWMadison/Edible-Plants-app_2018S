@@ -6,18 +6,12 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
-=======
 import android.text.method.LinkMovementMethod;
-import android.view.View;
-import android.widget.Button;
-import android.app.SearchManager;
 import android.widget.TextView;
->>>>>>> 8041dbbb5918fda760ecc0a25ad82dbab7704dd0
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
