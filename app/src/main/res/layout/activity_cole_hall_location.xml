@@ -28,6 +28,7 @@
         android:text="Cole"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,6 +72,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/addressTitle" />
 
             <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/mapsLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,8 +80,7 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
-                android:text="https://goo.gl/maps/erUFipsUcb52"
-                android:autoLink="web"
+                android:text="@string/coleMapsLink"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -100,54 +101,77 @@
                 app:layout_constraintTop_toBottomOf="@+id/mapsLink" />
 
             <TextView
-                android:id="@+id/plant2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/plant3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/plant1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/recipesTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Recipes:"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/foodsDescription" />
-
-            <TextView
-                android:id="@+id/recipesDescription"
+                android:id="@+id/peas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
-                android:paddingBottom="32dp"
-                android:text="http://www.supercook.com/#/recipes"
-                android:textSize="18sp"
-                android:autoLink="web"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipesTitle" />
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesPeas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="@string/peasRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/borage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesBorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="@string/borageRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/beans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesBeans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:paddingBottom="30dp"
+                android:text="@string/beanRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
 

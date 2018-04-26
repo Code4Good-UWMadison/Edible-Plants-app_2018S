@@ -2,6 +2,7 @@ package com.example.mitch.ediblelandscapes;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,6 +18,16 @@ public class SelleryHallLocation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sellery_hall_location);
 
+        TextView mapsLink = (TextView) findViewById(R.id.mapsLink);
+        TextView kaleRecipes = (TextView) findViewById(R.id.recipesKale);
+        TextView chardRecipes = (TextView) findViewById(R.id.recipesChard);
+        TextView basilRecipes = (TextView) findViewById(R.id.recipesBasil);
+
+        mapsLink.setMovementMethod(LinkMovementMethod.getInstance());
+        kaleRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+        chardRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+        basilRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("location/Smith/name");
         final TextView kale = (TextView) findViewById(R.id.kale);
@@ -30,7 +41,7 @@ public class SelleryHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                kale.setText("Kale: " + value.toString() + " available. Recipes: https://bit.ly/2HmM9Cn");
+                kale.setText("Kale: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 
@@ -48,7 +59,7 @@ public class SelleryHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                chard.setText("Chard: " + value.toString() + " available. Recipes: https://bit.ly/2HmM8hN");
+                chard.setText("Chard: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 
@@ -66,7 +77,7 @@ public class SelleryHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                basil.setText("Basil: " + value.toString() + " available. Recipes: https://bit.ly/2vxXDO1");
+                basil.setText("Basil: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 

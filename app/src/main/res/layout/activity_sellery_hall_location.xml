@@ -28,6 +28,7 @@
         android:text="Sellery"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -70,6 +71,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/kale" />
 
             <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/mapsLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,8 +79,7 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
-                android:text="https://goo.gl/maps/upb6iRmogz42"
-                android:autoLink="web"
+                android:text="@string/selleryMapsLink"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -110,6 +111,19 @@
                 android:textSize="18sp" />
 
             <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesKale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="@string/kaleRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
                 android:id="@+id/chard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,6 +132,19 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
                 android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesChard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="@string/chardRecipes"
+                android:textColor="@color/colorAccent"
                 android:textSize="18sp" />
 
             <TextView
@@ -132,33 +159,18 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/recipesTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Recipes:"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/foodsDescription" />
-
-            <TextView
-                android:id="@+id/recipesDescription"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesBasil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
-                android:paddingBottom="32dp"
-                android:text="http://www.supercook.com/#/recipes"
-                android:textSize="18sp"
-                android:autoLink="web"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipesTitle" />
+                android:paddingBottom="30dp"
+                android:text="@string/basilRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
 

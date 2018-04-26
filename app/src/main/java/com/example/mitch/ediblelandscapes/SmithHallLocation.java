@@ -2,6 +2,7 @@ package com.example.mitch.ediblelandscapes;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,14 +18,24 @@ public class SmithHallLocation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smith_hall_location);
 
+        TextView mapsLink = (TextView) findViewById(R.id.mapsLink);
+        TextView beetRecipes = (TextView) findViewById(R.id.recipesBeets);
+        TextView radishRecipes = (TextView) findViewById(R.id.recipesRadishes);
+        TextView carrotRecipes = (TextView) findViewById(R.id.recipesCarrot);
+
+        mapsLink.setMovementMethod(LinkMovementMethod.getInstance());
+        beetRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+        radishRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+        carrotRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+
         /*TextView plants[] = new TextView[3];
         for (TextView plant : plants){
             plant = (TextView) findViewById()
         }
         */
-        final TextView plant1 = (TextView) findViewById(R.id.plant1);
-        final TextView plant2 = (TextView) findViewById(R.id.plant2);
-        final TextView plant3 = (TextView) findViewById(R.id.plant3);
+        final TextView beets = (TextView) findViewById(R.id.beets);
+        final TextView radish = (TextView) findViewById(R.id.radish);
+        final TextView carrot = (TextView) findViewById(R.id.carrot);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef;
@@ -36,7 +47,7 @@ public class SmithHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                plant1.setText("Beets: " + value.toString() + " available. Recipes: https://bit.ly/2qQxPYx");
+                beets.setText("Beets: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 
@@ -54,7 +65,7 @@ public class SmithHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                plant2.setText("Radish: " + value.toString() + " available. Recipes: https://bit.ly/2qQxPYx");
+                radish.setText("Radish: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 
@@ -72,7 +83,7 @@ public class SmithHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                plant3.setText("Carrots: " + value.toString() + " available. Recipes: https://bit.ly/2qQxPYx");
+                carrot.setText("Carrots: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 

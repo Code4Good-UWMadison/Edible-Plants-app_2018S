@@ -28,6 +28,7 @@
         android:text="Smith"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -70,6 +71,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/addressTitle" />
 
             <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/mapsLink"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -77,8 +79,7 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
-                android:text="https://goo.gl/maps/MKa4oGJMga72"
-                android:autoLink="web"
+                android:text="@string/smithMapsLink"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,54 +100,77 @@
                 app:layout_constraintTop_toBottomOf="@+id/mapsLink" />
 
             <TextView
-                android:id="@+id/plant1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/plant2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/plant3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/recipesTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Recipes:"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/foodsDescription" />
-
-            <TextView
-                android:id="@+id/recipesDescription"
+                android:id="@+id/beets"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="32dp"
-                android:paddingBottom="32dp"
-                android:text="http://www.supercook.com/#/recipes"
-                android:textSize="18sp"
-                android:autoLink="web"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipesTitle" />
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesBeets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="@string/beetRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/radish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesRadishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="@string/radishRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/carrot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recipesCarrot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:paddingBottom="30dp"
+                android:text="@string/carrotRecipes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
 

@@ -2,6 +2,7 @@ package com.example.mitch.ediblelandscapes;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -10,6 +11,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
 public class ColeHallLocation extends AppCompatActivity {
 
     @Override
@@ -17,12 +20,22 @@ public class ColeHallLocation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cole_hall_location);
 
+        TextView mapsLink = (TextView) findViewById(R.id.mapsLink);
+        TextView beanRecipes = (TextView) findViewById(R.id.recipesBeans);
+        TextView peasRecipes = (TextView) findViewById(R.id.recipesPeas);
+        TextView borageRecipes = (TextView) findViewById(R.id.recipesBorage);
+
+        mapsLink.setMovementMethod(LinkMovementMethod.getInstance());
+        beanRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+        peasRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+        borageRecipes.setMovementMethod(LinkMovementMethod.getInstance());
+
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("plant/beans/quantity");
-        final TextView plant1 = (TextView) findViewById(R.id.plant1);
-        final TextView plant2 = (TextView) findViewById(R.id.plant2);
-        final TextView plant3 = (TextView) findViewById(R.id.plant3);
+        final TextView beans = (TextView) findViewById(R.id.beans);
+        final TextView peas = (TextView) findViewById(R.id.peas);
+        final TextView borage = (TextView) findViewById(R.id.borage);
 
         myRef = database.getReference("plant/beans/quantity");
         myRef.addValueEventListener(new ValueEventListener() {
@@ -31,7 +44,7 @@ public class ColeHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                plant1.setText("Beans: " + value.toString() + " available. Recipes: https://bit.ly/2qQxPYx");
+                beans.setText("Beans: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 
@@ -48,7 +61,7 @@ public class ColeHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                plant2.setText("Peas: " + value.toString() + " available. Recipes: https://bit.ly/2vR116X");
+                peas.setText("Peas: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 
@@ -65,7 +78,7 @@ public class ColeHallLocation extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Object value = dataSnapshot.getValue();
-                plant3.setText("Borrage: " + value.toString() + " available. Recipes: https://bit.ly/2K7A2qP");
+                borage.setText("Borrage: " + value.toString() + " available.");
                 //Log.d(TAG, "Value is: " + value);
             }
 

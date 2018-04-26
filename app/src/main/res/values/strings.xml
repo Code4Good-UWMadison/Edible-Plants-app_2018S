@@ -44,5 +44,16 @@
     <string name="cole_location_button">coleLocationButton</string>
     <string name="sellery_location_button">selleryLocationButton</string>
     <string name="smith_location_button">smithLocationButton</string>
-
+    <string name="beanRecipes"><a href="https://bit.ly/2qQxPYx">Green Bean Recipes</a></string>
+    <string name="beetRecipes"><a href="https://bit.ly/2r0FnY6">Beet Recipes</a></string>
+    <string name="radishRecipes"><a href="https://bit.ly/2HXYDNW">Radish Recipes</a></string>
+    <string name="carrotRecipes"><a href="https://bit.ly/2qZXuNW">Carrot Recipes</a></string>
+    <string name="kaleRecipes"><a href="https://bit.ly/2HmM9Cn">Kale Recipes</a></string>
+    <string name="chardRecipes"><a href="https://bit.ly/2HmM8hN">Chard Recipes</a></string>
+    <string name="basilRecipes"><a href="https://bit.ly/2vxXDO1">Basil Recipes</a></string>
+    <string name="peasRecipes"><a href="https://bit.ly/2JsEGhU">Peas Recipes</a></string>
+    <string name="borageRecipes"><a href="https://bit.ly/2Khz7DU">Borage Recipes</a></string>
+    <string name="coleMapsLink"><a href="https://goo.gl/maps/erUFipsUcb52">625 Elm Dr, Madison, WI 53706</a></string>
+    <string name="selleryMapsLink"><a href="https://goo.gl/maps/upb6iRmogz42">821 W Johnson St, Madison, WI 53706</a></string>
+    <string name="smithMapsLink"><a href="https://goo.gl/maps/MKa4oGJMga72">35 N Park St, Madison, WI 53715</a></string>
 </resources>

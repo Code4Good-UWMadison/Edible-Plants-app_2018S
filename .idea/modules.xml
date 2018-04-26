@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Edible-Plants-app_2018S.iml" filepath="$PROJECT_DIR$/Edible-Plants-app_2018S.iml" />
-      <module fileurl="file://C:\Users\PC\Documents\PC\Documents\GitHub\Edible Plants\Edible-Plants-app_2018S\.idea\Edible-Plants-app_2018S.iml" filepath="C:\Users\PC\Documents\PC\Documents\GitHub\Edible Plants\Edible-Plants-app_2018S\.idea\Edible-Plants-app_2018S.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../PC/Documents/PC/Documents/GitHub/Edible Plants/Edible-Plants-app_2018S/.idea/Edible-Plants-app_2018S.iml" filepath="$PROJECT_DIR$/../../../PC/Documents/PC/Documents/GitHub/Edible Plants/Edible-Plants-app_2018S/.idea/Edible-Plants-app_2018S.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
